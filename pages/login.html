@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<style>
+    body {
+        background-color: #EFEFEF;
+       
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .sigin_container {
+        background-color: white;
+         border-radius: 10px;
+    }
+
+    input {
+        border-radius: 50px !important;
+        border: 1px solid #B3B3B3 !important;
+        color: #000000 !important;
+        /* Change the text color if needed */
+        padding: 10px !important;
+        /* Adjust padding as needed */
+        outline: none !important;
+    }
+
+    input::placeholder {
+        color: #B3B3B3 !important;;
+    }
+    a{
+        text-decoration: none;
+        color: #B3B3B3;
+    }
+    .btn-primary{
+        background-color: #56BEA7 !important;
+        border-radius: 50px !important;
+        border: none !important;
+    }
+
+    .login_with_google{
+        background-color: white !important;
+        border: 1px solid #B3B3B3 !important;
+        color: #000000 !important;
+        border-radius: 20px !important;
+    }
+</style>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center flex-column" style="height: 100vh;">
+        <img src="../assets/logo.png" class="img-fluid mb-4" alt="Logo">
+
+    <div class="col-lg-6 col-md-10 col-sm-12 text-center mx-auto sigin_container">
+        <h4 class="my-2">Sign in</h4>
+        <form class="my-5 col-lg-8 col-md-10 col-sm-12 mx-auto">
+            <div class="form-group my-2">
+                <input type="email" class="form-control" placeholder="Enter email address" required>
+            </div>
+    
+            <div class="form-group my-2">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+    
+            <div class="d-flex justify-content-between">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label mx-2" for="rememberMe">Remember me</label>
+                </div>
+    
+                <div class="my-auto">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+    
+            <div class="d-grid gap-2 col-8 mx-auto mt-3">
+                <button class="btn btn-primary p-2" type="submit" >Login</button>
+            </div>
+
+            <div class="my-3">
+                <span style="color: #084422;">or</span>
+            </div>
+
+            <div class="d-grid gap-2 col-8 mx-auto">
+                <a class="btn btn-primary p-2 login_with_google"> <img src="../assets/google.png" class="mx-2 img-fluid"  alt=""> Continue with google</a>
+            </div>
+        </form>
+    </div>
+
+
+    </div>
+
+
+
+</body>
+<!-- Bootstrap JS, Popper.js, and jQuery CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+</html>
